@@ -8,6 +8,6 @@ class CreateCategoriesItemsJoin < ActiveRecord::Migration
   end
 
   def self.down
-  	drop table :categories_items
+  	drop_table :categories_items
   end
 end

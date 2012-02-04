@@ -8,6 +8,6 @@ class CreateItemsTagsJoin < ActiveRecord::Migration
   end
 
   def self.down
-  	drop table :items_tags
+  	drop_table :items_tags
   end
 end

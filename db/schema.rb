@@ -51,7 +51,8 @@ ActiveRecord::Schema.define(:version => 20120131195507) do
   end
 
   create_table "users", :force => true do |t|
-    t.integer  "fb_uid"
+    t.string   "provider"
+    t.string   "oauth_uid"
     t.string   "email",      :default => "", :null => false
     t.string   "first_name"
     t.string   "last_name"
