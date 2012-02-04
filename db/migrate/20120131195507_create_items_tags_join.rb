@@ -1,6 +1,6 @@
 class CreateItemsTagsJoin < ActiveRecord::Migration
   def self.up
-  	create table :items_tags, :id => false do |t|
+  	create_table :items_tags, :id => false do |t|
   		t.integer "item_id"
   		t.integer "tag_id"
   	end
@@ -8,5 +8,6 @@ class CreateItemsTagsJoin < ActiveRecord::Migration
   end
 
   def self.down
+  	drop table :items_tags
   end
 end

@@ -1,6 +1,6 @@
 class CreateCategoriesItemsJoin < ActiveRecord::Migration
   def self.up
-  	create table :categories_items, :id => false do |t|
+  	create_table :categories_items, :id => false do |t|
   		t.integer "category_id"
   		t.integer "page_id"
   	end
