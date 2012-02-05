@@ -1,9 +1,14 @@
-<p>Hello World</p>
-Welcome to BuySell!
+<div id="logo">BuySell</div>
 
-<% if current_user %>
-	Welcome <%= current_user.first_name %>!
-	<%= link_to "Sign Out!", signout_path %>
-<% else %>
-	<%= link_to "Sign in with Facebook", "/auth/facebook" %>
-<% end %>
+<div id="nav">
+  <% if current_user %>
+  	Welcome <%= current_user.first_name %>!
+  	<%= link_to "Sign Out!", signout_path %>
+  <% else %>
+  	<%= link_to "Sign in with Facebook", "/auth/facebook" %>
+  <% end %>
+</div>
+
+<div class="clear"></div>
+
+<p> Welcome to BuySell </p>
