@@ -2,8 +2,10 @@
 <html>
   <head>
     <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
-    <%= stylesheet_link_tag "application" %>
+    <link rel="stylesheet/less" type="text/css" href="stylesheets/less/bootstrap.less">
+    <!--<%= stylesheet_link_tag "application" %> -->
     <%= javascript_include_tag :defaults %>
+    <%= javascript_include_tag "less" %>
     <%= csrf_meta_tag %>
     <%= yield(:head) %>
   </head>
