@@ -1,0 +1,31 @@
+!!!
+%html
+  %head
+    %title= content_for?(:title) ? yield(:title) : "BuySell"
+    %link{:href => "stylesheets/bootstrap.less", :rel => "stylesheet/less"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Lobster", :rel => "stylesheet"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Cabin", :rel => "stylesheet"}
+      = javascript_include_tag "bootstrap"
+      = javascript_include_tag "less"
+      = csrf_meta_tag
+      = yield(:head)
+  %body
+    %div.navbar
+      %div.navbar-inner
+        %div.container
+          %a.brand{:href => "#"} BuySell
+          %ul.nav
+            %li.active
+              %a{:href => "#"} Home
+            %li
+              %a{:href => "#"} About
+          %ul.nav.pull-right
+            %li.divider-vertical
+            %li
+              - if current_user
+                Welcome #{current_user.first_name}!
+                \#{link_to "Sign Out!", signout_path}
+              - else
+                = link_to "Login with Facebook", "auth/facebook"
+    %div.container
+      = yield

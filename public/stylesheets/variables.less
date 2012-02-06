@@ -23,16 +23,19 @@
 // Accent colors
 @blue:                  #049cdb;
 @blueDark:              #0064cd;
-@green:                 #244317;
+@green:                 #46a546;
 @red:                   #9d261d;
 @yellow:                #ffc40d;
 @orange:                #f89406;
 @pink:                  #c3325f;
 @purple:                #7a43b6;
 
+// My Colors
+@mainGreen:              #27431c;
+
 // Typography
 @baseFontSize:          13px;
-@baseFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@baseFontFamily:        'Cabin', sans-serif;
 @baseLineHeight:        18px;
 @textColor:             @grayDark;
 
@@ -59,12 +62,12 @@
 
 // Navbar
 @navbarHeight:                    40px;
-@navbarBackground:                @green;
-@navbarBackgroundHighlight:       darken(@green, 15%);
+@navbarBackground:                @mainGreen;
+@navbarBackgroundHighlight:       lighten(@mainGreen, 10%);
 
 @navbarText:                      @white;
 @navbarLinkColor:                 @white;
-@navbarLinkColorHover:            lighten(@white, 30%);
+@navbarLinkColorHover:            @white;
 
 // Form states and alerts
 @warningText:             #c09853;

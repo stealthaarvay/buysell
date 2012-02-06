@@ -12,8 +12,6 @@ class ApplicationController < ActionController::Base
   def logged_in
     if (!current_user)
       redirect_to root_url, :alert => "Please login first!"
-    else
-      #redirect_to dash_path
     end
   end
 

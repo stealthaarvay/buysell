@@ -14,9 +14,7 @@
 .navbar-inner {
   padding-left:  20px;
   padding-right: 20px;
-  background-color: @green;
-//  #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
-  //.border-radius(4px);
+  #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
   @shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
   .box-shadow(@shadow);
 }
@@ -57,6 +55,7 @@
   }
   // Website or project name
   .brand {
+    font-family: 'Lobster', cursive;
     float: left;
     display: block;
     padding: 8px 20px 12px;

@@ -104,6 +104,8 @@
 .btn-danger:hover,
 .btn-success,
 .btn-success:hover,
+.btn-green,
+.btn-green:hover,
 .btn-info,
 .btn-info:hover {
   text-shadow: 0 -1px 0 rgba(0,0,0,.25);
@@ -114,6 +116,7 @@
 .btn-warning.active,
 .btn-danger.active,
 .btn-success.active,
+.btn-green.active,
 .btn-info.active {
   color: rgba(255,255,255,.75);
 }
@@ -139,7 +142,9 @@
 .btn-info {
   .buttonBackground(#5bc0de, #2f96b4);
 }
-
+.btn-green {
+  .buttonBackground(lighten(@mainGreen, 15%), @mainGreen);
+}
 
 // Cross-browser Jank
 // --------------------------------------------------
